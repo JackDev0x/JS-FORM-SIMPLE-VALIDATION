@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="containerr">
+        <div class="container">
+            <h1>Sign up</h1>
+            <div class="row">
+                <form class="col s6" id="form" novalidate>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="FirstName">First Name</label>
+                            <input type="text" name="FirstName" id="FirstName" onfocusout="validateFirstName()">
+                            <span class="helper-text"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="LastName">Last name</label>
+                            <input type="text" name="LastName" id="LastName" onfocusout="validateLastName()">
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="Email">E-mail</label>
+                            <input type="email" name="Email" id="Email" onfocusout="validateEmail()">
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="DateOfBith">Date of birth</label>
+                            <input type="date" name="DateOfBith" id="DateOfBith">
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="Password">Password</label>
+                            <input type="password" name="Password" id="Password" onfocusout="validatePassword()">
+                            <span class="helper-text"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="ConfirmPassword">Confirm password</label>
+                            <input type="password" name="ConfirmPassword" id="ConfirmPassword" onfocusout="validateConfirmPassword()">
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="Description">Description</label>
+                            <textarea id="Description" name="Description" onfocusout="checkTextarea()"></textarea>
+                        </div>
+                    </div>
+                    <button class="button" type="submit">Log in</button>
+                </form>
+            </div>
+        </div>
+        <div id="error-message" class="hidden">
+            <p>Error message</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
